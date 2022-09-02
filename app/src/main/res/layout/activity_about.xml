@@ -4,6 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#053F5C"
     tools:context=".AboutActivity">
 
+    <ImageView
+        android:id="@+id/imgBackButton"
+        android:layout_width="53dp"
+        android:layout_height="36dp"
+        app:srcCompat="@drawable/ic_back_arrow"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="33dp" />
+
+    <TextView
+        android:id="@+id/txtAboutTitle"
+        android:layout_width="130dp"
+        android:layout_height="69dp"
+        android:text="@string/AboutTitle"
+        android:textColor="#F18634"
+        android:textColorHighlight="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="140dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/btnWhatIsPocus"
+        android:layout_width="277dp"
+        android:layout_height="78dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#DFDFDF"
+        android:text="Button"
+        app:rippleColor="#DFDFDF"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="177dp" />
+
+    <Button
+        android:id="@+id/btnFocusImportance"
+        android:layout_width="277dp"
+        android:layout_height="78dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#DFDFDF"
+        android:text="Button"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <Button
+        android:id="@+id/btnWhatIsPomodoro"
+        android:layout_width="277dp"
+        android:layout_height="78dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#DFDFDF"
+        android:text="Button"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="417dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

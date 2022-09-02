@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Pocus App</string>
+    <string name="AboutTitle">About</string>
+    <string name="TimersTitle">Timers</string>
+    <string name="WhatIsPocus">O que é Pocus?</string>
+    <string name="FocusImportance">Foco e sua importância</string>
 </resources>

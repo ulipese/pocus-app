@@ -4,6 +4,86 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#053F5C"
     tools:context=".AboutActivity">
 
+    <ImageView
+        android:id="@+id/imgBackButton"
+        android:layout_width="53dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="61dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnWhatIsPocus"
+        app:layout_constraintEnd_toStartOf="@+id/txtAboutTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow" />
+
+    <TextView
+        android:id="@+id/txtAboutTitle"
+        android:layout_width="130dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="63dp"
+        android:layout_marginEnd="141dp"
+        android:layout_marginBottom="27dp"
+        android:text="@string/AboutTitle"
+        android:textColor="#F18634"
+        android:textColorHighlight="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnWhatIsPocus"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBackButton"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnWhatIsPocus"
+        android:layout_width="277dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="43dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#DFDFDF"
+        android:backgroundTintMode="add"
+        android:text="@string/WhatIsPocus"
+        android:onClick="chamarActivityPocus"
+        app:layout_constraintBottom_toTopOf="@+id/btnFocusImportance"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtAboutTitle"
+        app:rippleColor="#DFDFDF" />
+
+    <Button
+        android:id="@+id/btnFocusImportance"
+        android:layout_width="277dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginBottom="41dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#DFDFDF"
+        android:backgroundTintMode="add"
+        android:text="@string/FocusImportance"
+        android:onClick="chamarActivityImportancia"
+        app:layout_constraintBottom_toTopOf="@+id/btnWhatIsPomodoro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWhatIsPocus" />
+
+    <Button
+        android:id="@+id/btnWhatIsPomodoro"
+        android:layout_width="277dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="235dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#DFDFDF"
+        android:backgroundTintMode="add"
+        android:text="@string/WhatIsPomodoro"
+        android:onClick="chamarActivityOquePomodoro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFocusImportance" />
 </androidx.constraintlayout.widget.ConstraintLayout>

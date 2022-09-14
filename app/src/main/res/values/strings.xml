@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Pocus App</string>
+    <string name="AboutTitle">About</string>
+    <string name="TimersTitle">Timers</string>
+    <!-- Tela ABOUT -->
+    <string name="WhatIsPocus">O que é Pocus?</string>
+    <string name="FocusImportance">Foco e sua importância</string>
+    <string name="WhatIsPomodoro">O que é pomodoro?</string>
+
+    <!-- O que é POCUS -->
+    <string name="VejaImportancia">Veja a importância do foco</string>
+    <string name="OqPomodoro">O que é pomodoro</string>
+    <string name="ComeceFoco">Comece a focar!</string>
 </resources>

@@ -3,9 +3,24 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/2etimds/Documents/lau_lipe/PAM/pocus-app/app/src/main/res/drawable/ic_back_arrow.xml" value="0.186" />
+        <entry key="..\:/Users/2etimds/Documents/lau_lipe/PAM/pocus-app/app/src/main/res/drawable/ic_break_timer.xml" value="0.186" />
+        <entry key="..\:/Users/2etimds/Documents/lau_lipe/PAM/pocus-app/app/src/main/res/drawable/ic_info.xml" value="0.186" />
+        <entry key="..\:/Users/2etimds/Documents/lau_lipe/PAM/pocus-app/app/src/main/res/drawable/ic_launcher_background.xml" value="0.186" />
+        <entry key="..\:/Users/2etimds/Documents/lau_lipe/PAM/pocus-app/app/src/main/res/drawable/ic_next_arrow.xml" value="0.186" />
+        <entry key="..\:/Users/2etimds/Documents/lau_lipe/PAM/pocus-app/app/src/main/res/drawable/ic_pocus_icon.xml" value="0.186" />
+        <entry key="..\:/Users/2etimds/Documents/lau_lipe/PAM/pocus-app/app/src/main/res/drawable/ic_restart_timer.xml" value="0.186" />
+        <entry key="..\:/Users/2etimds/Documents/lau_lipe/PAM/pocus-app/app/src/main/res/drawable/ic_start_timer.xml" value="0.1995" />
+        <entry key="..\:/Users/2etimds/Documents/lau_lipe/PAM/pocus-app/app/src/main/res/drawable/ic_stop_timer.xml" value="0.186" />
+        <entry key="..\:/Users/2etimds/Documents/lau_lipe/PAM/pocus-app/app/src/main/res/layout/activity_about.xml" value="0.33" />
         <entry key="..\:/Users/55119/AndroidStudioProjects/PocusApp/app/src/main/res/drawable/ic_back_arrow.xml" value="0.2075" />
         <entry key="..\:/Users/55119/AndroidStudioProjects/PocusApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/55119/AndroidStudioProjects/PocusApp/app/src/main/res/layout/activity_timers.xml" value="0.2" />
+        <entry key="..\:/Users/lauan/Desktop/programming/etec/pocus_app/pocus-app/app/src/main/res/layout/activity_about.xml" value="0.33" />
+        <entry key="..\:/Users/lauan/Desktop/programming/etec/pocus_app/pocus-app/app/src/main/res/layout/activity_importance_of_focus.xml" value="0.25" />
+        <entry key="..\:/Users/lauan/Desktop/programming/etec/pocus_app/pocus-app/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/lauan/Desktop/programming/etec/pocus_app/pocus-app/app/src/main/res/layout/activity_what_is_pocus.xml" value="0.33" />
+        <entry key="..\:/Users/lauan/Desktop/programming/etec/pocus_app/pocus-app/app/src/main/res/layout/activity_what_is_pomodoro.xml" value="0.25" />
       </map>
     </option>
   </component>

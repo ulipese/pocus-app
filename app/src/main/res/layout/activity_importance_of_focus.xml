@@ -17,6 +17,7 @@
         android:paddingLeft="30dip"
         android:text="@string/OqPomodoro"
         android:textColor="#053F5C"
+        android:onClick="chamarActivityWhatIsPomodoro"
         app:icon="@drawable/ic_next_arrow"
         app:iconGravity="textEnd"
         app:iconPadding="20dp"

@@ -15,6 +15,7 @@
         android:drawableTint="#FF00FF"
         android:paddingLeft="30dip"
         android:text="@string/VejaImportancia"
+        android:onClick="chamarActivityImportance"
         android:textColor="#053F5C"
         app:icon="@drawable/ic_next_arrow"
         app:iconGravity="textEnd"

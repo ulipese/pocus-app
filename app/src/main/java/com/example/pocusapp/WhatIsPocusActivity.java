@@ -13,4 +13,10 @@ public class WhatIsPocusActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_what_is_pocus);
     }
+
+    public void chamarActivityImportance(View view) {
+        Intent intent = new Intent(this, ImportanceOfFocusActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }

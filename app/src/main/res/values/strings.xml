@@ -11,4 +11,16 @@
     <string name="VejaImportancia">Veja a importância do foco</string>
     <string name="OqPomodoro">O que é pomodoro</string>
     <string name="ComeceFoco">Comece a focar!</string>
+    <string name="ExplicacaoPocus">Pocus App é um aplicativo que se baseia no método de gerenciamento
+    de tempo "Pomodoro". \n
+
+    A intenção desse aplicativo é, não só a utilização desse método, como a explicação da importância
+    de se ter um método para gerenciar seu tempo.</string>
+
+    <!-- IMPORTÂNCIA DO FOCO-->
+    <string name="ExplicacaoFoco">
+        O gerenciamento do tempo é importante para que as atividades do dia a dia sejam feitas
+        de uma forma mais performática e, consequentemente, mais rápida e eficiente! \n \n
+
+        Não se preocupe, iremos te ajudar com todo esse processo de foco! </string>>
 </resources>

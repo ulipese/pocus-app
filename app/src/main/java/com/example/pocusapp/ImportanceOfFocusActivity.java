@@ -19,4 +19,10 @@ public class ImportanceOfFocusActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void goBack (View view) {
+        Intent back = new Intent(this, WhatIsPocusActivity.class);
+        startActivity(back);
+        super.onBackPressed();
+    }
 }

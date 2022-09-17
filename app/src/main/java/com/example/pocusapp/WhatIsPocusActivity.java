@@ -19,4 +19,10 @@ public class WhatIsPocusActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void goBack (View view) {
+        Intent back = new Intent(this, AboutActivity.class);
+        startActivity(back);
+        super.onBackPressed();
+    }
 }

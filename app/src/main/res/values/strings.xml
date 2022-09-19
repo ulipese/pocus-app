@@ -23,4 +23,12 @@
         de uma forma mais performática e, consequentemente, mais rápida e eficiente! \n \n
 
         Não se preocupe, iremos te ajudar com todo esse processo de foco! </string>>
+
+
+<!--    tela main/timer -->
+    <string name="start">Começar</string>
+    <string name="pausar">Pausar</string>
+    <string name="breaktimer">Break</string>
+    <string name="mudeseutimer">Mude seu timer</string>
+    <string name="vejasobre">Veja sobre</string>
 </resources>

@@ -2,8 +2,10 @@ package com.example.pocusapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.os.CountDownTimer;
+import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -12,11 +14,11 @@ import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static final long START_TIME_IN_MILLIS = 600000;
-
+    public static final long START_TIME_IN_MILLIS = 30 * 60000;
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private android.widget.Button mButtonReset;
+//    private Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
     private CountDownTimer mCountDownTimer;
 
@@ -62,6 +64,8 @@ public class MainActivity extends AppCompatActivity {
             public void onTick(long millisUntilFinished) {
                 mTimeLeftInMillis = millisUntilFinished;
                 updateCountDownText();
+                Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                v.cancel();
             }
 
             @Override
@@ -70,7 +74,17 @@ public class MainActivity extends AppCompatActivity {
                 // muda o icon
                 mButtonStartPause.setBackgroundResource(R.drawable.ic_start_timer);
                 //muda a visibilidade do reset
-                mButtonReset.setVisibility(View.INVISIBLE);
+                mButtonReset.setVisibility(View.VISIBLE);
+                Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+                // Start without a delay
+                // Vibrate for 100 milliseconds
+                // Sleep for 1000 milliseconds
+                long[] pattern = {0, 100, 100};
+
+                // The '0' here means to repeat indefinitely
+                // '0' is actually the index at which the pattern keeps repeating from (the start)
+                // To repeat the pattern from any other point, you could increase the index, e.g. '1'
+                v.vibrate(pattern, 0);
             }
         }.start();
         mTimerRunning = true;
@@ -81,6 +95,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void pauseTimer() {
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        v.cancel();
         mCountDownTimer.cancel();
         mTimerRunning = false;
         // muda o icon
@@ -90,6 +106,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void resetTimer() {
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        v.cancel();
         mTimeLeftInMillis = START_TIME_IN_MILLIS;
         updateCountDownText();
         mButtonReset.setVisibility(View.INVISIBLE);

@@ -19,4 +19,10 @@ public class WhatIsPomodoroActivity extends AppCompatActivity {
         startActivity(back);
         super.onBackPressed();
     }
+
+    public void goTimer (View view) {
+        Intent timer = new Intent(this, MainActivity.class);
+        startActivity(timer);
+        finish();
+    }
 }

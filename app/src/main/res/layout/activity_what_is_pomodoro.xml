@@ -30,6 +30,7 @@
         android:layout_height="97dp"
         android:backgroundTint="#FFFFFF"
         android:drawableTint="#FF00FF"
+        android:onClick="goTimer"
         android:paddingLeft="30dip"
         android:text="@string/ComeceFoco"
         android:textColor="#053F5C"

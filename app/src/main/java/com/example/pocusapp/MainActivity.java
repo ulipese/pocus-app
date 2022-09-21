@@ -10,12 +10,25 @@ import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
+<<<<<<< HEAD
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
     public static final long START_TIME_IN_MILLIS = 30 * 60000;
+=======
+
+import org.w3c.dom.Text;
+
+import java.util.Locale;
+
+public class MainActivity extends AppCompatActivity implements SensorEventListener {
+    private SensorManager sensorManager;
+    private Sensor proximity;
+    public static final long START_TIME_IN_MILLIS = 25 * 60000;
+>>>>>>> 7562b27 (Add Proximity Sensor Functionalities)
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private android.widget.Button mButtonReset;
@@ -36,6 +49,21 @@ public class MainActivity extends AppCompatActivity {
         mTextViewCountDown = findViewById(R.id.text_view_timer);
         mButtonStartPause = findViewById(R.id.btn_startPause);
         mButtonReset = findViewById(R.id.btn_reset);
+<<<<<<< HEAD
+=======
+
+        sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+
+
+        if (sensorManager != null) {
+            Sensor proximity = sensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+
+            if (proximity != null) {
+                sensorManager.registerListener(this, proximity, sensorManager.SENSOR_DELAY_NORMAL);
+            }
+        }
+
+>>>>>>> 7562b27 (Add Proximity Sensor Functionalities)
     // setando o evento onClick
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,6 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
                 v.cancel();
             }
+
 
             @Override
             public void onFinish() {
@@ -121,6 +150,28 @@ public class MainActivity extends AppCompatActivity {
         String timeLeftFormatted = String.format(Locale.getDefault(),"%02d:%02d", minutes, seconds);
         mTextViewCountDown.setText(timeLeftFormatted);
     }
+
+    @Override
+    public void onSensorChanged(SensorEvent event) {
+        if (event.sensor.getType() == Sensor.TYPE_PROXIMITY) {
+            // ((TextView)findViewById(R.id.textView6)).setText("Values: " + event.values[0]); // muda o texto do "Começar" pra sabermos o valor do proximity
+
+            if (event.values[0] == 0) {
+                Toast.makeText(this, "Timer Started", Toast.LENGTH_SHORT).show();
+                startTimer();
+            }
+
+            if (event.values[0] > 0 && mTimeLeftInMillis < (25 * 60000)) {
+                Toast.makeText(this, "Timer Paused", Toast.LENGTH_LONG).show();
+                pauseTimer();
+            }
+        }
+    }
+
+    @Override
+    public void onAccuracyChanged(Sensor sensor, int i) {
+
+    } // DON'T TOUCH !
 
     public void goAbout (View view) {
         Intent about = new Intent(this, AboutActivity.class);

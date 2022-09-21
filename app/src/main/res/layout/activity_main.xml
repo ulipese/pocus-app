@@ -38,6 +38,7 @@
         android:layout_marginBottom="53dp"
         android:backgroundTint="#FFFFFF"
         android:drawableTint="#FF00FF"
+        android:onClick="goAbout"
         android:paddingLeft="65dip"
         android:text="@string/vejasobre"
         android:textColor="#053F5C"

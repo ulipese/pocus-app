@@ -25,7 +25,7 @@
         Não se preocupe, iremos te ajudar com todo esse processo de foco! </string>>
 
 
-<!--    tela main/timer -->
+    <!--    tela main/timer -->
     <string name="start">Começar</string>
     <string name="pausar">Pausar</string>
     <string name="breaktimer">Break</string>

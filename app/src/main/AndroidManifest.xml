@@ -3,9 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.pocusapp">
 
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.VIBRATE"/>
-
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -18,11 +17,14 @@
         android:theme="@style/Theme.PocusApp"
         tools:targetApi="31">
         <activity
+            android:name=".permissions_activity"
+            android:exported="false" />
+        <activity
             android:name=".TimersActivity"
             android:exported="false" />
         <activity
             android:name=".AboutActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".WhatIsPomodoroActivity"
             android:exported="false" />
@@ -31,11 +33,17 @@
             android:exported="false" />
         <activity
             android:name=".WhatIsPocusActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+
+
     </application>
 
 </manifest>

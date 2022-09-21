@@ -3,6 +3,7 @@ package com.example.pocusapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Vibrator;
@@ -119,5 +120,11 @@ public class MainActivity extends AppCompatActivity {
 
         String timeLeftFormatted = String.format(Locale.getDefault(),"%02d:%02d", minutes, seconds);
         mTextViewCountDown.setText(timeLeftFormatted);
+    }
+
+    public void goAbout (View view) {
+        Intent about = new Intent(this, AboutActivity.class);
+        startActivity(about);
+        finish();
     }
 }

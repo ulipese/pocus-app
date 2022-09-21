@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private android.widget.Button mButtonReset;
-//    private Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+    //    private Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
     private CountDownTimer mCountDownTimer;
 

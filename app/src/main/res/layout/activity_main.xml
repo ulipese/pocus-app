@@ -8,34 +8,12 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/btnGoFocus4"
-        android:layout_width="275dp"
-        android:layout_height="67dp"
-        android:layout_marginStart="67dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginBottom="1dp"
-        android:backgroundTint="#FFFFFF"
-        android:drawableTint="#FF00FF"
-        android:paddingLeft="30dip"
-        android:text="@string/mudeseutimer"
-        android:textColor="#053F5C"
-        app:cornerRadius="10dp"
-        app:icon="@drawable/ic_next_arrow"
-        app:iconGravity="textEnd"
-        app:iconPadding="30dp"
-        app:iconTint="#F27F0C"
-        app:layout_constraintBottom_toTopOf="@+id/btnGoFocus5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <Button
         android:id="@+id/btnGoFocus5"
         android:layout_width="275dp"
         android:layout_height="67dp"
         android:layout_marginStart="69dp"
         android:layout_marginEnd="67dp"
-        android:layout_marginBottom="53dp"
+        android:layout_marginBottom="104dp"
         android:backgroundTint="#FFFFFF"
         android:drawableTint="#FF00FF"
         android:onClick="goAbout"
@@ -49,8 +27,8 @@
         app:iconTint="#F27F0C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGoFocus4" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/text_view_timer"
@@ -96,14 +74,15 @@
         android:layout_width="86dp"
         android:layout_height="79dp"
         android:layout_marginStart="162dp"
+        android:layout_marginTop="28dp"
         android:layout_marginEnd="163dp"
         android:backgroundTint="#EDEDED"
         app:cornerRadius="10dp"
         app:icon="@drawable/ic_start_timer"
         app:iconGravity="textTop"
         app:iconTint="#F27F0C"
-        app:layout_constraintBottom_toTopOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/text_view_timer" />
 
@@ -113,11 +92,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="177dp"
         android:layout_marginEnd="177dp"
-        android:layout_marginBottom="56dp"
         android:text="@string/start"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btnGoFocus4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_startPause" />

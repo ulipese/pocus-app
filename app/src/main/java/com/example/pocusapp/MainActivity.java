@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.os.Vibrator;
@@ -12,13 +16,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-<<<<<<< HEAD
-import java.util.Locale;
-
-public class MainActivity extends AppCompatActivity {
-
-    public static final long START_TIME_IN_MILLIS = 30 * 60000;
-=======
 
 import org.w3c.dom.Text;
 
@@ -28,17 +25,17 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private SensorManager sensorManager;
     private Sensor proximity;
     public static final long START_TIME_IN_MILLIS = 25 * 60000;
->>>>>>> 7562b27 (Add Proximity Sensor Functionalities)
     private TextView mTextViewCountDown;
     private Button mButtonStartPause;
     private android.widget.Button mButtonReset;
-    //    private Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+//    private Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
     private CountDownTimer mCountDownTimer;
 
     private boolean mTimerRunning;
 
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
+
 
 
     @Override
@@ -49,8 +46,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         mTextViewCountDown = findViewById(R.id.text_view_timer);
         mButtonStartPause = findViewById(R.id.btn_startPause);
         mButtonReset = findViewById(R.id.btn_reset);
-<<<<<<< HEAD
-=======
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
@@ -63,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             }
         }
 
->>>>>>> 7562b27 (Add Proximity Sensor Functionalities)
     // setando o evento onClick
         mButtonStartPause.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,6 +69,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 }
             }
         });
+
     // setando o evento onClick
         mButtonReset.setOnClickListener(new View.OnClickListener() {
             @Override

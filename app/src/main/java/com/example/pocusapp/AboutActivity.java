@@ -70,11 +70,19 @@ public class AboutActivity extends AppCompatActivity {
         finish();
     }
 
+<<<<<<< HEAD
     public void goPermission(View view) {
         Intent permission = new Intent(this, permissions_activity.class);
         startActivity(permission);
         finish();
     }
 
+=======
+    public void chamarActivityMain(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
+>>>>>>> 6faca598c6465c8382d67adbab4ccaa68de9de8b
 
 }

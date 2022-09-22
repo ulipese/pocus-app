@@ -14,6 +14,7 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="61dp"
+        android:onClick="chamarActivityMain"
         app:layout_constraintBottom_toTopOf="@+id/btnWhatIsPocus"
         app:layout_constraintEnd_toStartOf="@+id/txtAboutTitle"
         app:layout_constraintStart_toStartOf="parent"

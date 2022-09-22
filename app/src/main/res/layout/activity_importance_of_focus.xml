@@ -53,7 +53,7 @@
         android:layout_height="83dp"
         android:background="#FFF2F2"
         android:paddingVertical="22dp"
-        android:text="@string/WhatIsPocus"
+        android:text="@string/FocusImportance"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#053F5C"
@@ -67,10 +67,11 @@
         android:id="@+id/imageView2"
         android:layout_width="fill_parent"
         android:layout_height="191dp"
+        android:background="#394FC8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_template" />
+        app:srcCompat="@drawable/ic_pocus_icon" />
 
     <Button
         android:id="@+id/button2"

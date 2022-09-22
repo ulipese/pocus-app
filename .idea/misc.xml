@@ -19,7 +19,14 @@
         <entry key="..\:/Users/55119/AndroidStudioProjects/PocusApp/app/src/main/res/drawable/ic_back_arrow.xml" value="0.2075" />
         <entry key="..\:/Users/55119/AndroidStudioProjects/PocusApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/55119/AndroidStudioProjects/PocusApp/app/src/main/res/layout/activity_timers.xml" value="0.2" />
+<<<<<<< HEAD
         <entry key="..\:/Users/lauan/Desktop/programming/etec/pocus_app/pocus-app/app/src/main/res/drawable/ic_back_arrow.xml" value="0.202" />
+=======
+        <entry key="..\:/Users/55119/Desktop/pocus-app/app/src/main/res/layout/activity_about.xml" value="0.2" />
+        <entry key="..\:/Users/55119/Desktop/pocus-app/app/src/main/res/layout/activity_importance_of_focus.xml" value="0.22" />
+        <entry key="..\:/Users/55119/Desktop/pocus-app/app/src/main/res/layout/activity_what_is_pocus.xml" value="0.10885416666666667" />
+        <entry key="..\:/Users/55119/Desktop/pocus-app/app/src/main/res/layout/activity_what_is_pomodoro.xml" value="0.10885416666666667" />
+>>>>>>> 6faca598c6465c8382d67adbab4ccaa68de9de8b
         <entry key="..\:/Users/lauan/Desktop/programming/etec/pocus_app/pocus-app/app/src/main/res/drawable/ic_template.xml" value="0.202" />
         <entry key="..\:/Users/lauan/Desktop/programming/etec/pocus_app/pocus-app/app/src/main/res/drawable/rounded_corner_txtview_timer.xml" value="0.202" />
         <entry key="..\:/Users/lauan/Desktop/programming/etec/pocus_app/pocus-app/app/src/main/res/layout/activity_about.xml" value="0.33" />

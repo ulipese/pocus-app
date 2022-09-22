@@ -32,7 +32,7 @@
         android:id="@+id/imageView"
         android:layout_width="fill_parent"
         android:layout_height="191dp"
-        android:background="#B7E5FA"
+        android:background="#394FC8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

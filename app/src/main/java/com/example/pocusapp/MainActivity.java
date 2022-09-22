@@ -13,6 +13,7 @@ import android.os.CountDownTimer;
 import android.os.Vibrator;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -26,7 +27,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private Sensor proximity;
     public static final long START_TIME_IN_MILLIS = 25 * 60000;
     private TextView mTextViewCountDown;
-    private Button mButtonStartPause;
+    private TextView mTextViewButton;
+    private ImageButton mButtonStartPause;
     private android.widget.Button mButtonReset;
 //    private Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         mTextViewCountDown = findViewById(R.id.text_view_timer);
         mButtonStartPause = findViewById(R.id.btn_startPause);
         mButtonReset = findViewById(R.id.btn_reset);
+        mTextViewButton = findViewById(R.id.txtviewbtnplaypause);
 
         sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
@@ -97,7 +100,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
             public void onFinish() {
                 mTimerRunning = false;
                 // muda o icon
-                mButtonStartPause.setBackgroundResource(R.drawable.ic_start_timer);
+                mButtonStartPause.setImageResource(R.drawable.ic_start_timer);
+                mTextViewButton.setText("Começar");
                 //muda a visibilidade do reset
                 mButtonReset.setVisibility(View.VISIBLE);
                 Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
@@ -114,7 +118,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         }.start();
         mTimerRunning = true;
         // muda o icon
-        mButtonStartPause.setBackgroundResource(R.drawable.ic_stop_timer);
+        mButtonStartPause.setImageResource(R.drawable.ic_stop_timer);
+        mTextViewButton.setText("Pausar");
         //Muda a visibilidade do reset
         mButtonReset.setVisibility(View.INVISIBLE);
     }
@@ -125,7 +130,8 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         mCountDownTimer.cancel();
         mTimerRunning = false;
         // muda o icon
-        mButtonStartPause.setBackgroundResource(R.drawable.ic_start_timer);
+        mButtonStartPause.setImageResource(R.drawable.ic_start_timer);
+        mTextViewButton.setText("Começar");
         // Muda a visibilidade do reset
         mButtonReset.setVisibility(View.VISIBLE);
     }

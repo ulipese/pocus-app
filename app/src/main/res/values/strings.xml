@@ -31,4 +31,12 @@
     <string name="breaktimer">Break</string>
     <string name="mudeseutimer">Mude seu timer</string>
     <string name="vejasobre">Veja sobre</string>
+
+<!--    tela permissão-->
+    <string name="permission">Para utilizar este aplicativo, é necesário que a permissão de localização seja concedida. \n \n
+    Para conceder a permissão, aperte no botão abaixo.
+    </string>
+    <string name="permissionbtn">Conceder permissão
+    </string>
+
 </resources>

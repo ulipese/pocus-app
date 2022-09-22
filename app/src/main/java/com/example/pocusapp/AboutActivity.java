@@ -19,14 +19,14 @@ public class AboutActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
 
-        // Checando se a permissão já está garantida
+        // Checando se a permissão não está garantida
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
         }
-        // Se não, requisitar permissão
+        // Se não...
         else {
             ActivityCompat.requestPermissions(this,
-            new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
+                    new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
         }
     }
     @Override
@@ -43,7 +43,9 @@ public class AboutActivity extends AppCompatActivity {
                 }
                 // se não:
                 else {
-                    Toast.makeText(this, "Permission Denied", Toast.LENGTH_SHORT).show();
+                    Intent permission = new Intent(this, permissions_activity.class);
+                    startActivity(permission);
+                    finish();
                 }
                 return;
             }
@@ -65,6 +67,12 @@ public class AboutActivity extends AppCompatActivity {
     public void chamarActivityOquePomodoro(View view) {
         Intent intent = new Intent(this, WhatIsPomodoroActivity.class);
         startActivity(intent);
+        finish();
+    }
+
+    public void goPermission(View view) {
+        Intent permission = new Intent(this, permissions_activity.class);
+        startActivity(permission);
         finish();
     }
 

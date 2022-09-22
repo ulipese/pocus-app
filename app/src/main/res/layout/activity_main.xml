@@ -37,14 +37,12 @@
         android:layout_marginStart="67dp"
         android:layout_marginTop="80dp"
         android:layout_marginEnd="66dp"
-        android:layout_marginBottom="6dp"
         android:background="@drawable/rounded_corner_txtview_timer"
         android:paddingVertical="120dp"
         android:text="00:00"
         android:textAlignment="center"
         android:textSize="28dp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/btn_startPause"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -69,34 +67,34 @@
         app:layout_constraintTop_toTopOf="@+id/text_view_timer"
         tools:visibility="visible" />
 
-    <Button
-        android:id="@+id/btn_startPause"
-        android:layout_width="86dp"
-        android:layout_height="79dp"
-        android:layout_marginStart="162dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="163dp"
-        android:backgroundTint="#EDEDED"
-        app:cornerRadius="10dp"
-        app:icon="@drawable/ic_start_timer"
-        app:iconGravity="textTop"
-        app:iconTint="#F27F0C"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_timer" />
-
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txtviewbtnplaypause"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="177dp"
         android:layout_marginEnd="177dp"
+        android:layout_marginBottom="76dp"
         android:text="@string/start"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnGoFocus5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_startPause" />
+
+    <ImageButton
+        android:id="@+id/btn_startPause"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="166dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtviewbtnplaypause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_timer"
+        app:srcCompat="@drawable/ic_start_timer"
+        tools:ignore="SpeakableTextPresentCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

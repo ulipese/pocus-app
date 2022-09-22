@@ -7,4 +7,31 @@
     android:background="#053F5C"
     tools:context=".permissions_activity">
 
+    <TextView
+        android:id="@+id/txtPermission"
+        android:layout_width="335dp"
+        android:layout_height="225dp"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="38dp"
+        android:text="@string/permission"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnPermission"
+        android:layout_width="134dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="345dp"
+        android:backgroundTint="#FFFFFF"
+        android:text="@string/permissionbtn"
+        app:cornerRadius="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPermission" />
 </androidx.constraintlayout.widget.ConstraintLayout>

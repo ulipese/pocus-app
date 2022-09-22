@@ -68,5 +68,10 @@ public class AboutActivity extends AppCompatActivity {
         finish();
     }
 
+    public void chamarActivityMain(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+        finish();
+    }
 
 }

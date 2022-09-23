@@ -23,10 +23,9 @@ public class AboutActivity extends AppCompatActivity {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
         }
-        // Se não...
+        // Se não... (permissão garantida)
         else {
-            ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, 1);
+
         }
     }
     @Override
@@ -70,19 +69,19 @@ public class AboutActivity extends AppCompatActivity {
         finish();
     }
 
-<<<<<<< HEAD
+
     public void goPermission(View view) {
         Intent permission = new Intent(this, permissions_activity.class);
         startActivity(permission);
         finish();
     }
 
-=======
+
     public void chamarActivityMain(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
     }
->>>>>>> 6faca598c6465c8382d67adbab4ccaa68de9de8b
+
 
 }

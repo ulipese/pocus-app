@@ -39,10 +39,13 @@ Com ela, você dá um tempinho de descanso para seu cérebro, de forma que você
     <string name="vejasobre">Veja sobre</string>
 
 <!--    tela permissão-->
-    <string name="permission">Para utilizar este aplicativo, é necesário que a permissão de localização seja concedida. \n \n
+    <string name="PorquePermitir">Por que permitir?
+    </string>
+    <string name="permission">Para utilizar este aplicativo, é necessário que a permissão de localização seja concedida. \n \n
     Para conceder a permissão, aperte no botão abaixo.
     </string>
     <string name="permissionbtn">Conceder permissão
     </string>
+
 
 </resources>

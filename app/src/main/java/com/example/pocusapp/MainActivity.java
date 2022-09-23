@@ -96,13 +96,15 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     }
 
     private void startTimer() {
+        Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+        v.vibrate(200);
         mCountDownTimer = new CountDownTimer(mTimeLeftInMillis, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
                 mTimeLeftInMillis = millisUntilFinished;
                 updateCountDownText();
-                Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-                v.cancel();
+//                Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
+//                v.cancel();
             }
 
 
@@ -121,8 +123,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
                 long[] pattern = {0, 100, 100};
 
                 // The '0' here means to repeat indefinitely
-                // '0' is actually the index at which the pattern keeps repeating from (the start)
-                // To repeat the pattern from any other point, you could increase the index, e.g. '1'
+                // '0' is actually the index at which the pattern keeps repeating from (the start)'
                 v.vibrate(pattern, 0);
             }
         }.start();
@@ -136,7 +137,7 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
 
     private void pauseTimer() {
         Vibrator v = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
-        v.cancel();
+        v.vibrate(200);
         mCountDownTimer.cancel();
         mTimerRunning = false;
         // muda o icon

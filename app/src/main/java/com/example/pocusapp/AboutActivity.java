@@ -7,10 +7,14 @@ import androidx.core.content.ContextCompat;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
+
+import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 
 public class AboutActivity extends AppCompatActivity {
 
@@ -81,6 +85,15 @@ public class AboutActivity extends AppCompatActivity {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
         finish();
+    }
+
+    public void sendEmail(View view) throws UnsupportedEncodingException {
+        String uriText = "mailto:lauan.amorim@etec.sp.gov.br" + "?subject="+ URLEncoder.encode("Assunto", "utf-8")+
+                "&body="+ URLEncoder.encode("Descreva\u00A0o\u00A0\u00A0problema/sugestão", "utf-8");
+        Uri uri = Uri.parse(uriText);
+        Intent iniciar = new Intent(Intent.ACTION_SENDTO);
+        iniciar.setData(uri);
+        startActivity(Intent.createChooser(iniciar, getString(R.string.sendEmail)));
     }
 
 

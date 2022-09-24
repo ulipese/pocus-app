@@ -95,4 +95,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFocusImportance" />
+
+    <Button
+        android:id="@+id/btnWhatIsPomodoro2"
+        android:layout_width="215dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="29dp"
+        android:backgroundTint="#032232"
+        android:backgroundTintMode="add"
+        android:onClick="sendEmail"
+        android:text="@string/talktodev"
+        android:textColor="#40A2D3"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="50dp"
+        android:text="@string/txttalktodev"
+        android:textColor="#65C4F4"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnWhatIsPomodoro2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnWhatIsPomodoro" />
 </androidx.constraintlayout.widget.ConstraintLayout>

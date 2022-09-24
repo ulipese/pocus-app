@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.pocusapp">
+    xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <uses-feature android:name="android.hardware.sensor.proximity" />
@@ -18,9 +19,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PocusApp"
         tools:targetApi="31">
-        <activity
-            android:name=".talk_developers"
-            android:exported="true" />
         <activity
             android:name=".permissions_activity"
             android:exported="true" />

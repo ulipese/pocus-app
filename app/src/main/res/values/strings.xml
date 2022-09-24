@@ -6,6 +6,8 @@
     <string name="WhatIsPocus">O que é Pocus?</string>
     <string name="FocusImportance">Foco e sua importância</string>
     <string name="WhatIsPomodoro">O que é pomodoro?</string>
+    <string name="txttalktodev">Tem alguma sugestão ou encontrou algum bug?</string>
+    <string name="talktodev">Fale com um desenvolvedor</string>
 
     <!-- O que é POCUS -->
     <string name="VejaImportancia">Veja a importância do foco</string>
@@ -24,6 +26,7 @@
 
         Não se preocupe, iremos te ajudar com todo esse processo de foco! </string>
     <string name="linkfoco">Veja mais sobre técnicas de estudo</string>
+    <string name="biblioteca">Veja bibliotecas próximas</string>
 
     <string name="OqueEPomodoro">
 Pomodoro é uma técnica de concentração, estudo e gerenciamento de tempo, criada por Francesco Cirillo por volta de 1980.
@@ -48,6 +51,6 @@ Com ela, você dá um tempinho de descanso para seu cérebro, de forma que você
     <string name="permissionbtn">Conceder permissão
     </string>
 
-    <string name="sendEmail">trocar ideia com o dev
+    <string name="sendEmail">Escolha o seu aplicativo de e-mail
     </string>
 </resources>

@@ -1,8 +1,8 @@
 # Pocus App
 
 ## Integrantes
+Felipe Sene Souza </br>
 Felipe Sousa de Oliveira
-Lauan Amorim
 
 ## Tema
 App para contabilizar e auxiliar no tempo de foco do usuário para que consiga fazer suas tarefas.

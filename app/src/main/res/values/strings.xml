@@ -53,4 +53,16 @@ Com ela, você dá um tempinho de descanso para seu cérebro, de forma que você
 
     <string name="sendEmail">Escolha o seu aplicativo de e-mail
     </string>
+    <string name="registerTitle">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="passwordConfirm">Repeat your password</string>
+    <string name="HaveAnAcc">Already have an account? Log in!</string>
+    <string name="loginTitle">Login</string>
+    <string name="DontHaveAnAcc">Don\'t have an account yet? Register!</string>
+    <string name="rememberMe">Remember me</string>
+    <string name="profile">Profile</string>
+    <string name="profileUsername">Hello user, it\'s time to focus!</string>
+    <string name="profilePassword">Don\'t forget, your password is \'…\'</string>
+    <string name="Logout">Logout</string>
 </resources>

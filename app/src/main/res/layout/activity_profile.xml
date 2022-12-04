@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#053F5C"
+    tools:context=".ProfileActivity">
+
+    <ImageView
+        android:id="@+id/imgBackButton2"
+        android:layout_width="53dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="61dp"
+        android:contentDescription="@string/profile"
+        android:onClick="chamarActivityMain"
+        app:layout_constraintBottom_toTopOf="@+id/btnWhatIsPocus"
+        app:layout_constraintEnd_toStartOf="@+id/txtAboutTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_back_arrow"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <TextView
+        android:id="@+id/txtPasswordView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="91dp"
+        android:layout_marginBottom="178dp"
+        android:text="@string/profilePassword"
+        android:textColor="#dfdfdf"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtUsernameView" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="147dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="91dp"
+        android:text="@string/profile"
+        android:textColor="#F27F0C"
+        android:textFontWeight="600"
+        android:textSize="38sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsername"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="@string/profile" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="104dp"
+        android:layout_height="106dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="TODO"
+        android:foreground="@mipmap/user_foreground"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/txtUsernameView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView18"
+        tools:ignore="ImageContrastCheck"
+        tools:srcCompat="@mipmap/user_foreground"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/txtUsernameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/profileUsername"
+        android:textColor="#dfdfdf"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtPasswordView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="159dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="126dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="79dp"
+        android:backgroundTint="@color/darkBlue"
+        android:onClick="Logout"
+        android:text="@string/Logout"
+        android:textColor="#40A2D3"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPasswordView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

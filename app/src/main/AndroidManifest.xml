@@ -4,8 +4,10 @@
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-feature android:name="android.hardware.sensor.proximity" />
 
@@ -20,10 +22,16 @@
         android:theme="@style/Theme.PocusApp"
         tools:targetApi="31">
         <activity
-            android:name=".permissions_activity"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".TimersActivity"
+            android:name=".LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".permissions_activity"
             android:exported="false" />
         <activity
             android:name=".AboutActivity"

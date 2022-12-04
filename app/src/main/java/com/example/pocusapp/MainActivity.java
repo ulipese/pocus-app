@@ -7,6 +7,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.database.Cursor;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -41,8 +42,6 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
     private boolean mTimerRunning;
 
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -193,4 +192,14 @@ public class MainActivity extends AppCompatActivity implements SensorEventListen
         startActivity(about);
         finish();
     }
+    public void goProfile (View view) {
+        Intent intent = new Intent(this, ProfileActivity.class);
+        Bundle extras = getIntent().getExtras();
+        String username = extras.getString("myUsername");
+        String password = extras.getString("myPassword");
+        intent.putExtra("myUsername", username);
+        intent.putExtra("myPassword", password);
+        startActivity(intent);
+    }
+
 }
